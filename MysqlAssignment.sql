@@ -1,0 +1,13 @@
+use syntaxhrm_mysql;
+select * from Customers;
+select * from Products;
+select product_name, unit_price from Products;
+select distinct discategory_id from Products;
+select * from Products where unit_price>100;
+select * from Customers where last_name = 'Smith';
+select * from Products order by unit_price;
+select * from Orders order by total_amount desc;
+select * from Products where category_id is null;
+select * from Customers where phone_number is not null;
+select product_name, unit_price, stock_quantity,(unit_price * stock_quantity) as inventory_value from Products;
+select * from Orders where order_date like '2023%';
